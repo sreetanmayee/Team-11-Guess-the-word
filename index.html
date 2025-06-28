@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Word Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1>Guess the <span class="highlight">word</span></h1>
+        </div>
+
+        <div class="right-panel">
+            <div class="card-body">
+                <center><h5 class="card-title">Scrambled Word</h5></center>
+
+                <div class="word">
+                    <h3 class="card-text" id="scWord" style="color: white;"></h3>
+                </div>
+                <h5 class="card-text" id="attemtpts" style="color: white;"></h5>
+
+                <div class="input-area">
+                    <center><input type="text" id="input-box" placeholder="Enter your guess"></center>
+                    <center><p id="incorrect"></p></center>
+                    <center><button class="btn btn-primary" onclick="guesss()">Guess</button></center>
+                </div>
+
+                <div id="buttons" class="d-flex justify-content-center align-items-center">
+                    <button class="btn btn-primary" onclick="random()">Random</button>
+                    <button class="btn btn-primary" onclick="reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="C:\Users\DELL\Desktop\Mini Project\Bootstrap\js\bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
